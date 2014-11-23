@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Meal Calculator</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="action_settings">Settings</string>
+    <string name="eur">EUR</string>
+    <string name="bgn">BGN</string>
+    <string name="usd">USD</string>
+    <string name="increase_count">+</string>
+    <string name="decrease_count">-</string>
+    <string name="home_delivery">Home Delivery</string>
+    <string name="calculate">Calculate</string>
+    <string name="total">Total Price:</string>
+    <string name="about_us">About Us</string>
+    <string name="about_us_title">We are mobile business solutions: imagined, designed &amp; delivered.</string>
+    <string name="about_us_text">MentorMate started in 2001 around a single innovative app for language educators.\nToday we are an international mobile solutions firm with over 210 employees working in five cities globally.\nOver the last decade, our clients have helped us earn the position of industry leader in providing innovative custom mobile and software, user experience (UX) design, backend integration, data analytics/BI, and management &amp; consulting services focused on the mobile enterprise.</string>
+    <string name="dishes_min_limit">Dish count can not be negative!</string>
+    <string name="dishes_max_limit">Dish count can not be greater than 10!</string>
+    <string name="deserts_min_limit">Desert count can not be negative!</string>
+    <string name="deserts_max_limit">Desert count can not be greater than 10!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="calculate_meal">Calculate Meal</string>
+
+</resources>

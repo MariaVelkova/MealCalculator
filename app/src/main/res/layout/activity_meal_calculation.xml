@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MealCalculationActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/currency"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:text="@string/eur"
+            android:id="@+id/eurCurrency" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:text="@string/bgn"
+            android:id="@+id/bgnCurrency" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:text="@string/usd"
+            android:id="@+id/usdCurrency"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dish"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/currency"
+        android:layout_height="50sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:id="@+id/dishName" />
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="0"
+            android:id="@+id/dishPrice"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:textAlignment="center"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="@string/eur"
+            android:id="@+id/dishCurrency"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textIsSelectable="true"
+            android:paddingTop="15dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/dishCount"
+            android:text="0" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".10"
+            android:text="@string/increase_count"
+            android:id="@+id/addDish"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".10"
+            android:text="@string/decrease_count"
+            android:id="@+id/removeDish" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/desert"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/dish"
+        android:layout_height="50sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:id="@+id/desertName" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="0"
+            android:id="@+id/desertPrice"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:textAlignment="center"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="@string/eur"
+            android:id="@+id/desertCurrency"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:paddingTop="15dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/desertCount"
+            android:text="0" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".10"
+            android:text="@string/increase_count"
+            android:id="@+id/addDesert" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".10"
+            android:text="@string/decrease_count"
+            android:id="@+id/removeDesert" />
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drink"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/desert"
+        android:layout_height="50sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:id="@+id/drinkName" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="0"
+            android:id="@+id/drinkPrice"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:textAlignment="center"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="@string/eur"
+            android:id="@+id/drinkCurrency"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:paddingTop="15dp" />
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40"
+            android:id="@+id/drinkCount"
+            android:progress="1"
+            android:max="6" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/delivery"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/drink"
+        android:layout_height="70sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".30"
+            android:text="@string/home_delivery"
+            android:id="@+id/homeDelivery" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="10"
+            android:id="@+id/homeDeliveryPrice"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:textAlignment="center"
+            android:paddingTop="15dp"  />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:text="@string/eur"
+            android:id="@+id/homeDeliveryCurrency"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:paddingTop="15dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".40"
+            android:text="@string/calculate"
+            android:id="@+id/btnCalculate" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/delivery"
+        android:layout_height="50sp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="@string/total"
+            android:id="@+id/totalLabel"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="0"
+            android:id="@+id/totalPrice"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:text="@string/eur"
+            android:id="@+id/currencyLabel"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textIsSelectable="true"
+            android:paddingTop="15dp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/total"
+        android:layout_height="50sp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/about_us"
+            android:id="@+id/aboutUs" />
+    </LinearLayout>
+</RelativeLayout>

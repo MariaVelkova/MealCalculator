@@ -1,0 +1,21 @@
+{"dishes" : [
+    {"name" : "Dish 1", "price" : 9.80 },
+    {"name" : "Dish 2", "price" : 2.20},
+    {"name" : "Dish 3", "price" : 5.00},
+    {"name" : "Dish 4", "price" : 1.70},
+    {"name" : "Dish 5", "price" : 6.40}
+],
+"deserts" : [
+    {"name" : "Desert 1", "price" : 1.80 },
+    {"name" : "Desert 2", "price" : 5.20},
+    {"name" : "Desert 3", "price" : 3.00},
+    {"name" : "Desert 4", "price" : 8.70},
+    {"name" : "Desert 5", "price" : 9.40}
+],
+"drinks" : [
+    {"name" : "Beer 1", "price" : 0.80 },
+    {"name" : "Beer 2", "price" : 1.20},
+    {"name" : "Beer 3", "price" : 2.00},
+    {"name" : "Beer 4", "price" : 3.70},
+    {"name" : "Beer 5", "price" : 4.40}
+]}
